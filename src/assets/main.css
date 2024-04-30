@@ -1,0 +1,23 @@
+@import url('./reset.css');
+@import url('../styles/header.css');
+@import url('../styles/footer.css');
+
+:root {
+    --azul-main:#001c2f;
+
+
+}
+
+[data-contexto="foco"] {
+    --main-bg-color: var(--azul-main);
+}
+
+/* [data-contexto="descanso-curto"] {
+}
+
+[data-contexto="descanso-longo"] {
+} */
+
+html {
+    background: var(--main-bg-color);
+}
