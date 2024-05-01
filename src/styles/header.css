@@ -19,3 +19,10 @@ header a {
     user-select: none;
     color: var(--blue-50);
 }
+
+@media screen and (min-width: 1024px) {
+    header {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}

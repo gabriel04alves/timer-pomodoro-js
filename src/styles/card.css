@@ -154,3 +154,9 @@
     position: absolute;
     visibility: hidden;
 }
+
+@media screen and (min-width: 1024px)  {
+    .app__card-button {
+        width: 10rem;
+    }
+}
