@@ -1,15 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('./reset.css');
 @import url('../styles/header.css');
 @import url('../styles/footer.css');
 
 :root {
-    --azul-main:#001c2f;
+    --black-main:#1c1c1c;
+    --blue-50: #eef9ff;
+    --blue-100: #dcf3ff;
+    --blue-200: #b2e9ff;  
+    --blue-300: #6dd8ff;  
+    --blue-400: #20c5ff;  
+    --blue-500: #00aeff;  
+    --blue-600: #008bdf;  
+    --blue-700: #006eb4;  
+    --blue-800: #005d95;  
+    --blue-900: #004c7a;  
+    --blue-950: #001C2F;  
 
+    --font-main: 'Montserrat';
 
 }
 
 [data-contexto="foco"] {
-    --main-bg-color: var(--azul-main);
+    --main-header-color: linear-gradient(to bottom, var(--blue-600), transparent);
+    --main-bg-color: var(--black-main);
 }
 
 /* [data-contexto="descanso-curto"] {
@@ -20,4 +34,5 @@
 
 html {
     background: var(--main-bg-color);
+    font-family: var(--font-main), Arial, Helvetica, sans-serif;
 }

@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 1vh;
+    height: 12vh;
+    padding: 1rem;
+
+    background-image:  var(--main-header-color);   
+    color: var(--blue-50);
+    font-size: 1.3rem;
+}
+
+header a {
+    font-style: italic;
+    text-decoration: none;
+    user-select: none;
+    color: var(--blue-50);
+}
