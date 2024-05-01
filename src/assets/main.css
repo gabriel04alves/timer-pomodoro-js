@@ -45,7 +45,7 @@
     --font-main: 'Montserrat';
 }
 
-[data-contexto="foco"] {
+[data-context="foco"] {
     --main-bg-color: var(--black-main);
     --main-header-color: linear-gradient(to bottom, var(--blue-600), transparent);
     --main-card-bg-color: var(--blue-950);
@@ -57,9 +57,10 @@
     --main--active-btn-font-color: var(--blue-950);
     --main--hover-btn-bg-color: var(--blue-600);
     --main--hover-btn-font-color: var(--blue-100);
+    --main-timer-font-color: var(--blue-100);
 }
 
-[data-contexto="short"] {
+[data-context="short"] {
     --main-bg-color: var(--black-main);
     --main-header-color: linear-gradient(to bottom, var(--green-600), transparent);
     --main-card-bg-color: var(--green-950);
@@ -71,9 +72,10 @@
     --main--active-btn-font-color: var(--green-950);
     --main--hover-btn-bg-color: var(--green-600);
     --main--hover-btn-font-color: var(--green-100);
+    --main-timer-font-color: var(--green-100);
 }
 
-[data-contexto="long"] {
+[data-context="long"] {
     --main-bg-color: var(--black-main);
     --main-header-color: linear-gradient(to bottom, var(--indigo-600), transparent);
     --main-card-bg-color: var(--indigo-950);
@@ -85,6 +87,7 @@
     --main--active-btn-font-color: var(--indigo-950);
     --main--hover-btn-bg-color: var(--indigo-600);
     --main--hover-btn-font-color: var(--indigo-100);
+    --main-timer-font-color: var(--indigo-100);
 }
 
 html {

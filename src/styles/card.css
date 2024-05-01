@@ -30,7 +30,7 @@
     
     font-family: var(--font-main), Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     
     color: var(--main-btn-font-color);
     background-color: var(--main-btn-bg-color);
@@ -55,15 +55,15 @@
 }
 
 .app__card-timer {
-    color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-main), Arial, Helvetica, sans-serif;
+    font-size: 6rem;
     text-align: center;
-    font-family: Unbounded;
-    font-size: 12rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin: 3.2rem;
-    text-align: center;
+    
+    margin: 5vh;
+    
+    color: var(--main-timer-font-color);
 }
 
 .app__card-list-label {
@@ -101,6 +101,20 @@
 
 .app__card-primary-button:hover {
     color: var(--main--hover-btn-font-color);
+}
+
+.container-app__title {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5vh 0 0 0;
+}
+
+.app__title {
+    color: var(--blue-50);
+
+    font-size: 1.5rem;
 }
 
 .toggle {
@@ -157,6 +171,15 @@
 
 @media screen and (min-width: 1024px)  {
     .app__card-button {
-        width: 10rem;
+        width: 14rem;
+
+        font-weight: 800;
+        font-size: 1.3rem;
+    }
+    .app__card-timer {
+        font-size: 10rem;
+    }
+    .container-app__title {
+        display: flex;
     }
 }
