@@ -1,0 +1,32 @@
+footer {
+    padding: 1vh;
+}
+
+.footer__info-list{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 5vw;
+    width: 100%;
+    margin: 1vh 0;
+}
+
+.footer__info-item {
+    display: flex;
+    gap: 5px;
+
+    color: var(--blue-50);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.footer__item-out {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__item-out {
+        display: flex;
+    }
+}

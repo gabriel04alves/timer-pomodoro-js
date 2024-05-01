@@ -91,8 +91,9 @@
 }
 
 html {
-    background: var(--main-bg-color);
+    background: var(--main-bg-color); 
     font-family: var(--font-main), Arial, Helvetica, sans-serif;
+    user-select: none;
 }
 
 body {
