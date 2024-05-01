@@ -2,6 +2,7 @@
 @import url('./reset.css');
 @import url('../styles/header.css');
 @import url('../styles/footer.css');
+@import url('../styles/card.css');
 
 :root {
     --black-main:#1c1c1c;
@@ -17,22 +18,84 @@
     --blue-900: #004c7a;  
     --blue-950: #001C2F;  
 
-    --font-main: 'Montserrat';
+    --green-50: #EEFBF6;
+    --green-100: #D5F6E7;
+    --green-200: #AEECD3;
+    --green-300: #79DCBB;
+    --green-400: #42C59D;
+    --green-500: #1FAA85;
+    --green-600: #12896B;
+    --green-700: #0F725C;
+    --green-800: #0E5747;
+    --green-900: #0C483C;
+    --green-950: #062822;
+    
+    --indigo-50: #F5F6FA;
+    --indigo-100: #EAECF4;
+    --indigo-200: #D1D7E6;
+    --indigo-300: #A8B4D1;
+    --indigo-400: #7A8CB6;
+    --indigo-500: #596D9E;
+    --indigo-600: #455584;
+    --indigo-700: #39456B;
+    --indigo-800: #323C5A;
+    --indigo-900: #2D344D;
+    --indigo-950: #161925;
 
+    --font-main: 'Montserrat';
 }
 
 [data-contexto="foco"] {
-    --main-header-color: linear-gradient(to bottom, var(--blue-600), transparent);
     --main-bg-color: var(--black-main);
+    --main-header-color: linear-gradient(to bottom, var(--blue-600), transparent);
+    --main-card-bg-color: var(--blue-950);
+    --main-card-font-color: var(--blue-700);
+    --main-card-border: var(--blue-400);
+    --main-btn-bg-color: var(--blue-900);
+    --main-btn-font-color: var(--blue-600);
+    --main--active-btn-bg-color: var(--blue-700);
+    --main--active-btn-font-color: var(--blue-950);
+    --main--hover-btn-bg-color: var(--blue-600);
+    --main--hover-btn-font-color: var(--blue-100);
 }
 
-/* [data-contexto="descanso-curto"] {
+[data-contexto="short"] {
+    --main-bg-color: var(--black-main);
+    --main-header-color: linear-gradient(to bottom, var(--green-600), transparent);
+    --main-card-bg-color: var(--green-950);
+    --main-card-font-color: var(--green-700);
+    --main-card-border: var(--green-400);
+    --main-btn-bg-color: var(--green-900);
+    --main-btn-font-color: var(--green-600);
+    --main--active-btn-bg-color: var(--green-700);
+    --main--active-btn-font-color: var(--green-950);
+    --main--hover-btn-bg-color: var(--green-600);
+    --main--hover-btn-font-color: var(--green-100);
 }
 
-[data-contexto="descanso-longo"] {
-} */
+[data-contexto="long"] {
+    --main-bg-color: var(--black-main);
+    --main-header-color: linear-gradient(to bottom, var(--indigo-600), transparent);
+    --main-card-bg-color: var(--indigo-950);
+    --main-card-font-color: var(--indigo-700);
+    --main-card-border: var(--indigo-400);
+    --main-btn-bg-color: var(--indigo-900);
+    --main-btn-font-color: var(--indigo-600);
+    --main--active-btn-bg-color: var(--indigo-700);
+    --main--active-btn-font-color: var(--indigo-950);
+    --main--hover-btn-bg-color: var(--indigo-600);
+    --main--hover-btn-font-color: var(--indigo-100);
+}
 
 html {
     background: var(--main-bg-color);
     font-family: var(--font-main), Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+
 }

@@ -1,0 +1,156 @@
+.app__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__card {
+    width: 70vw;
+    padding: 5vh;
+
+    background-color: var(--main-card-bg-color);
+    border-radius: 20px;
+    border: solid 1px var(--main-card-border);
+}
+
+.app__card-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1vh; 
+}
+
+.app__card-button {
+    width: 6rem;
+    height: 4rem;
+    padding: 1vh;
+    
+    font-family: var(--font-main), Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    
+    color: var(--main-btn-font-color);
+    background-color: var(--main-btn-bg-color);
+    
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    outline: inherit; 
+
+    transition: all 0.3s ease;
+}
+
+.app__card-button:hover {
+    background-color: var(--main--hover-btn-bg-color);
+    color: var(--main--active-btn-font-color);
+}
+
+.app__card-button.active {
+    color: var(--main--active-btn-font-color);
+    background: var(--main--active-btn-bg-color);
+    font-weight: 500;
+}
+
+.app__card-timer {
+    color: var(--color-secondary);
+    text-align: center;
+    font-family: Unbounded;
+    font-size: 12rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 3.2rem;
+    text-align: center;
+}
+
+.app__card-list-label {
+    color: var(--main-card-font-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.app__card-primary-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__card-primary-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10rem;
+    margin-top: 4vh;
+    padding: 1.5vh; 
+    gap: 0.5rem;
+
+    color: var(--main-btn-font-color);
+    background-color: var(--main-btn-bg-color);
+
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    
+    font-size: 1rem;
+}
+
+.app__card-primary-button:hover {
+    color: var(--main--hover-btn-font-color);
+}
+
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.toggle-switch {
+    display: inline-block;
+    background: #ccc;
+    border-radius: 20px;
+    width: 4rem;
+    height: 1.8rem; 
+    padding: 2px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+
+.toggle-switch:before,
+.toggle-switch:after {
+    content: "";
+}
+
+.toggle-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    left: 0.4rem;
+    transition: left 0.25s;
+}
+
+.toggle:hover .toggle-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+    background: var(--main--active-btn-bg-color);
+}
+
+.toggle-checkbox:checked + .toggle-switch:before {
+    left: 2.3rem; 
+}
+
+.toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
