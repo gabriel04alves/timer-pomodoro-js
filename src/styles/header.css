@@ -6,9 +6,12 @@ header {
     gap: 1vh;
     height: 12vh;
     padding: 1rem;
+
+    font-size: 3rem;
 }
 
 header a {
+    font-family: 'Teko', Arial, Helvetica, sans-serif;
     font-style: italic;
     text-decoration: none;
     user-select: none;
@@ -17,7 +20,7 @@ header a {
 
 @media screen and (min-width: 1024px) {
     header {
-        font-size: 2rem;
+        font-size: 3.5rem;
         font-weight: 300;
     }
 }

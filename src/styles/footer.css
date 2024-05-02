@@ -2,9 +2,10 @@ footer {
     padding: 1vh;
 }
 
-.footer__info-list{
+.footer__info-list {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
     gap: 5vw;
     width: 100%;
@@ -26,6 +27,9 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+    .footer__info-list {
+        gap: 3vw;
+    }
     .footer__item-out {
         display: flex;
     }
